@@ -1,0 +1,279 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "197839656add44b9fcc2a6a0813483df",
+    "packages": [
+        {
+            "name": "ayesh/php-timer",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ayesh/php-timer.git",
+                "reference": "021e8ff9f977f013b7b90794a660bb2597266357"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ayesh/php-timer/zipball/021e8ff9f977f013b7b90794a660bb2597266357",
+                "reference": "021e8ff9f977f013b7b90794a660bb2597266357",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0",
+                "symfony/phpunit-bridge": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ayesh\\PHP_Timer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ayesh Karunaratne",
+                    "email": "ayesh@ayesh.me",
+                    "homepage": "https://ayesh.me",
+                    "role": "Author"
+                }
+            ],
+            "description": "Stop-watch for all your needs. Supports timer start, pause, resume, stop, read, and minimal conversion.",
+            "homepage": "https://github.com/ayesh/php-timer",
+            "keywords": [
+                "benchmark",
+                "performance",
+                "stopwatch",
+                "time",
+                "timer"
+            ],
+            "time": "2020-02-03T21:31:47+00:00"
+        },
+        {
+            "name": "badoo/soft-mocks",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/badoo/soft-mocks.git",
+                "reference": "717adcbf6abd30b0c6579a3271e9b6b133b4f8fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/badoo/soft-mocks/zipball/717adcbf6abd30b0c6579a3271e9b6b133b4f8fe",
+                "reference": "717adcbf6abd30b0c6579a3271e9b6b133b4f8fe",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "nikic/php-parser": "^4.3.0",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4.3",
+                "vaimo/composer-patches": "3.23.1"
+            },
+            "type": "library",
+            "extra": {
+                "patches": {
+                    "phpunit/phpunit": [
+                        {
+                            "label": "phpunit run file",
+                            "source": "patches/phpunit4.x/phpunit_phpunit.patch",
+                            "version": ">=4.0.0 <5.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "phpunit run file",
+                            "source": "patches/phpunit5.x/phpunit_phpunit.patch",
+                            "version": ">=5.0.0 <6.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "phpunit run file",
+                            "source": "patches/phpunit6.x/phpunit_phpunit.patch",
+                            "version": ">=6.0.0 <7.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "phpunit run file",
+                            "source": "patches/phpunit7.x/phpunit_phpunit.patch",
+                            "version": ">=7.0.0 <8.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "phpunit run file",
+                            "source": "patches/phpunit8.x/phpunit_phpunit.patch",
+                            "version": ">=8.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #1",
+                            "source": "patches/phpunit4.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_1.patch",
+                            "version": ">=4.0.0 <5.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #1",
+                            "source": "patches/phpunit5.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_1.patch",
+                            "version": ">=5.0.0 <6.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #1",
+                            "source": "patches/phpunit6.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_1.patch",
+                            "version": ">=6.0.0 <7.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #1",
+                            "source": "patches/phpunit7.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_1.patch",
+                            "version": ">=7.0.0 <8.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #2",
+                            "source": "patches/phpunit4.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_2.patch",
+                            "version": ">=4.0.0 <5.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #2",
+                            "source": "patches/phpunit5.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_2.patch",
+                            "version": ">=5.0.0 <6.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #2",
+                            "source": "patches/phpunit6.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_2.patch",
+                            "version": ">=6.0.0 <7.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks #2",
+                            "source": "patches/phpunit7.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks_2.patch",
+                            "version": ">=7.0.0 <8.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks",
+                            "source": "patches/phpunit8.x/phpunit_add_ability_to_set_custom_filename_rewrite_callbacks.patch",
+                            "version": ">=8.0.0",
+                            "level": "1"
+                        }
+                    ],
+                    "phpunit/php-code-coverage": [
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks",
+                            "source": "patches/phpunit4.x/php-code-coverage_add_ability_to_set_custom_filename_rewrite_callbacks.patch",
+                            "version": ">=2.0.0 <4.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks",
+                            "source": "patches/phpunit5.x/php-code-coverage_add_ability_to_set_custom_filename_rewrite_callbacks.patch",
+                            "version": ">=4.0.0 <5.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks",
+                            "source": "patches/phpunit6.x/php-code-coverage_add_ability_to_set_custom_filename_rewrite_callbacks.patch",
+                            "version": ">=5.0.0 <6.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks",
+                            "source": "patches/phpunit7.x/php-code-coverage_add_ability_to_set_custom_filename_rewrite_callbacks.patch",
+                            "version": ">=6.0.0 <7.0.0",
+                            "level": "1"
+                        },
+                        {
+                            "label": "Add ability to set custom filename rewrite callbacks",
+                            "source": "patches/phpunit8.x/php-code-coverage_add_ability_to_set_custom_filename_rewrite_callbacks.patch",
+                            "version": ">=7.0.0",
+                            "level": "1"
+                        }
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Badoo Development"
+                }
+            ],
+            "description": "The idea behind \"Soft Mocks\" - as opposed to \"hardcore\" mocks that work on the level of the PHP interpreter (runkit and uopz) - is to rewrite class code on the spot so that it can be inserted in any place. It works by rewriting code on the fly during file inclusion instead of using extensions like runkit or uopz.",
+            "time": "2020-03-20T10:31:58+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "d86ca0f745b47efcf8d7cc1cfc69c55e78fd0b90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d86ca0f745b47efcf8d7cc1cfc69c55e78fd0b90",
+                "reference": "d86ca0f745b47efcf8d7cc1cfc69c55e78fd0b90",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "0.0.5",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2020-02-22T20:09:03+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

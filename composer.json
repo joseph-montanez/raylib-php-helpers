@@ -1,0 +1,22 @@
+{
+  "name": "joseph-montanez/raylib-php-helpers",
+  "description": "Utilities for RayLib-PHP",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Joseph Montanez",
+      "email": "sutabi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4.0",
+    "badoo/soft-mocks": "3.0.4",
+    "ayesh/php-timer": "2.1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "raylib\\Helpers\\": "src/"
+    }
+  }
+}
