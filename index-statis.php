@@ -36,10 +36,31 @@ $pauseApp->setEnable(false);
 //-- App Manager
 $appMgr = new \raylib\Helpers\ApplicationManager([$app, $pauseApp]);
 
-
+$slept = 0;
+$time = microtime(true);
+$fps = 0;
 // Main game loop
 while (!Window::shouldClose())    // Detect window close button or ESC key
 {
+    if ($slept > 10) {
+        exit;
+    }
+
+    $fps++;
+
+
+    if (microtime(true) - $time > 0.16 && microtime(true) - $time < 0.5) {
+        echo "sleeping...", PHP_EOL;
+        time_nanosleep(0, 1000000000 / 60 * 2);
+    }
+
+    if (microtime(true) - $time > 1.0) {
+        $slept++;
+        $time = microtime(true);
+        echo 'FPS: ', $fps, ' - avg - ', Timming::getFPS(), PHP_EOL;
+        $fps = 0;
+    }
+
     // Update
     //----------------------------------------------------------------------------------
     // TODO: Update your variables here
